@@ -1,0 +1,820 @@
+Searching 1375 files for "make_error_code"
+
+/Users/tylerbarkin/Documents/Git/PRIME/build/blinky.map:
+   20                                CMakeFiles/blinky.dir/src/stm32f4xx_it.c.o (vApplicationTickHook)
+   21  libPROJECT.a(error_categories.cc.o)
+   22:                               libPROJECT.a(pwm.cc.o) (make_error_code(HAL_StatusTypeDef))
+   23  libPROJECT.a(parameters.cc.o)
+   24                                CMakeFiles/blinky.dir/test/blinky.cc.o (Parameters::pwm_config_)
+   ..
+ 3764   .text._Z20make_error_condition17HAL_StatusTypeDef
+ 3765                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3766:  .text._Z15make_error_code13HardwareFault
+ 3767                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3768   .text._Z20make_error_condition13HardwareFault
+ 3769                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3770:  .text._Z15make_error_code25ResetAndClockControlError
+ 3771                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3772   .text._Z20make_error_condition25ResetAndClockControlError
+ 3773                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3774:  .text._Z15make_error_code8CrcError
+ 3775                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3776   .text._Z20make_error_condition8CrcError
+ 3777                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3778:  .text._Z15make_error_code9IwdgError
+ 3779                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3780   .text._Z20make_error_condition9IwdgError
+ 3781                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3782:  .text._Z15make_error_code9EwdgError
+ 3783                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3784   .text._Z20make_error_condition9EwdgError
+ 3785                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3786:  .text._Z15make_error_code13SelfTestError
+ 3787                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3788   .text._Z20make_error_condition13SelfTestError
+ 3789                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3790:  .text._Z15make_error_code10TimerError
+ 3791                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3792   .text._Z20make_error_condition10TimerError
+ 3793                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3794:  .text._Z15make_error_code8I2CError
+ 3795                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3796   .text._Z20make_error_condition8I2CError
+ 3797                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3798:  .text._Z15make_error_code17BatteryGaugeError
+ 3799                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3800   .text._Z20make_error_condition17BatteryGaugeError
+ 3801                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3802:  .text._Z15make_error_code8AdcError
+ 3803                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3804   .text._Z20make_error_condition8AdcError
+ 3805                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3806:  .text._Z15make_error_code23AdcChannelSelectorError
+ 3807                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3808   .text._Z20make_error_condition23AdcChannelSelectorError
+ 3809                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3810:  .text._Z15make_error_code21MotorPowerSupplyError
+ 3811                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3812   .text._Z20make_error_condition21MotorPowerSupplyError
+ 3813                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3814:  .text._Z15make_error_code15SystemTickError
+ 3815                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3816   .text._Z20make_error_condition15SystemTickError
+ 3817                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3818:  .text._Z15make_error_code10FlashError
+ 3819                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3820   .text._Z20make_error_condition10FlashError
+ 3821                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3822:  .text._Z15make_error_code17UserNotifierError
+ 3823                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3824   .text._Z20make_error_condition17UserNotifierError
+ 3825                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3826:  .text._Z15make_error_code8RTCError
+ 3827                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3828   .text._Z20make_error_condition8RTCError
+ 3829                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3830:  .text._Z15make_error_code12LoggingError
+ 3831                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3832   .text._Z20make_error_condition12LoggingError
+ 3833                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3834:  .text._Z15make_error_code13LogEntryError
+ 3835                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3836   .text._Z20make_error_condition13LogEntryError
+ 3837                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3838:  .text._Z15make_error_code23ISoftwareIntegrityError
+ 3839                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3840   .text._Z20make_error_condition23ISoftwareIntegrityError
+ 3841                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3842:  .text._Z15make_error_code20SwitchDebouncerError
+ 3843                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3844   .text._Z20make_error_condition20SwitchDebouncerError
+ ....
+ 3846   .text._Z20make_error_condition8PWMError
+ 3847                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3848:  .text._Z15make_error_code12EncoderError
+ 3849                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3850   .text._Z20make_error_condition12EncoderError
+ 3851                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3852:  .text._Z15make_error_code20MotorControllerError
+ 3853                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3854   .text._Z20make_error_condition20MotorControllerError
+ 3855                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3856:  .text._Z15make_error_code8FSMError
+ 3857                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3858   .text._Z20make_error_condition8FSMError
+ 3859                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3860:  .text._Z15make_error_code21MotionControllerError
+ 3861                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3862   .text._Z20make_error_condition21MotionControllerError
+ 3863                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3864:  .text._Z15make_error_code27PIDPositionControlCoreError
+ 3865                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3866   .text._Z20make_error_condition27PIDPositionControlCoreError
+ 3867                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3868:  .text._Z15make_error_code23BrakingControlCoreError
+ 3869                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3870   .text._Z20make_error_condition23BrakingControlCoreError
+ 3871                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3872:  .text._Z15make_error_code9UARTError
+ 3873                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3874   .text._Z20make_error_condition9UARTError
+ 3875                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3876:  .text._Z15make_error_code8SPIError
+ 3877                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3878   .text._Z20make_error_condition8SPIError
+ 3879                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3880:  .text._Z15make_error_code13RTOSTaskError
+ 3881                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3882   .text._Z20make_error_condition13RTOSTaskError
+ 3883                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3884:  .text._Z15make_error_code14RTOSQueueError
+ 3885                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 3886   .text._Z20make_error_condition14RTOSQueueError
+ ....
+ 18245                  0x000000000800911c       0x1c libPROJECT.a(error_categories.cc.o)
+ 18246                  0x000000000800911c                PWMCategory::~PWMCategory()
+ 18247:  .text._Z15make_error_code17HAL_StatusTypeDef
+ 18248                  0x0000000008009138       0x34 libPROJECT.a(error_categories.cc.o)
+ 18249:                 0x0000000008009138                make_error_code(HAL_StatusTypeDef)
+ 18250:  .text._Z15make_error_code8PWMError
+ 18251                  0x000000000800916c       0x34 libPROJECT.a(error_categories.cc.o)
+ 18252:                 0x000000000800916c                make_error_code(PWMError)
+ 18253   .text._ZNSt7__cxx1112basic_stringIcSt11char_traitsIcESaIcEE12_M_constructIPKcEEvT_S8_St20forward_iterator_tag
+ 18254                  0x00000000080091a0       0x68 libPROJECT.a(error_categories.cc.o)
+ .....
+ 18260                  0x0000000008009228       0x20 libPROJECT.a(error_categories.cc.o)
+ 18261                  0x0000000008009228                PWMCategory::message[abi:cxx11](int) const
+ 18262:  .text._GLOBAL__sub_I__Z15make_error_code17HAL_StatusTypeDef
+ 18263                  0x0000000008009248        0xe libPROJECT.a(error_categories.cc.o)
+ 18264   .text.HAL_MspInit
+
+/Users/tylerbarkin/Documents/Git/PRIME/build/prime_dev.map:
+   38                                CMakeFiles/prime_dev.dir/src/main_dev.cc.o (vtable for AdcChannelSelector)
+   39  libPROJECT.a(error_categories.cc.o)
+   40:                               libPROJECT.a(adc.cc.o) (make_error_code(HAL_StatusTypeDef))
+   41  libPROJECT.a(STWD100_external_watchdog.cc.o)
+   42                                CMakeFiles/prime_dev.dir/src/main_dev.cc.o (vtable for STWD100_ExternalWatchdog)
+   ..
+ 9733   .text._Z20make_error_condition17HAL_StatusTypeDef
+ 9734                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9735:  .text._Z15make_error_code13HardwareFault
+ 9736                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9737   .text._Z20make_error_condition13HardwareFault
+ ....
+ 9751   .text._Z20make_error_condition8I2CError
+ 9752                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9753:  .text._Z15make_error_code17BatteryGaugeError
+ 9754                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9755   .text._Z20make_error_condition17BatteryGaugeError
+ ....
+ 9791   .text._Z20make_error_condition23BrakingControlCoreError
+ 9792                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9793:  .text._Z15make_error_code9UARTError
+ 9794                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9795   .text._Z20make_error_condition9UARTError
+ 9796                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9797:  .text._Z15make_error_code8SPIError
+ 9798                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9799   .text._Z20make_error_condition8SPIError
+ ....
+ 9801   .text._Z20make_error_condition13RTOSTaskError
+ 9802                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9803:  .text._Z15make_error_code14RTOSQueueError
+ 9804                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9805   .text._Z20make_error_condition14RTOSQueueError
+ ....
+ 51460                  0x000000000801acac       0x1c libPROJECT.a(error_categories.cc.o)
+ 51461                  0x000000000801acac                RTOSTaskCategory::~RTOSTaskCategory()
+ 51462:  .text._Z15make_error_code17HAL_StatusTypeDef
+ 51463                  0x000000000801acc8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51464:                 0x000000000801acc8                make_error_code(HAL_StatusTypeDef)
+ 51465:  .text._Z15make_error_code25ResetAndClockControlError
+ 51466                  0x000000000801acfc       0x34 libPROJECT.a(error_categories.cc.o)
+ 51467:                 0x000000000801acfc                make_error_code(ResetAndClockControlError)
+ 51468:  .text._Z15make_error_code8CrcError
+ 51469                  0x000000000801ad30       0x34 libPROJECT.a(error_categories.cc.o)
+ 51470:                 0x000000000801ad30                make_error_code(CrcError)
+ 51471:  .text._Z15make_error_code9IwdgError
+ 51472                  0x000000000801ad64       0x34 libPROJECT.a(error_categories.cc.o)
+ 51473:                 0x000000000801ad64                make_error_code(IwdgError)
+ 51474:  .text._Z15make_error_code9EwdgError
+ 51475                  0x000000000801ad98       0x34 libPROJECT.a(error_categories.cc.o)
+ 51476:                 0x000000000801ad98                make_error_code(EwdgError)
+ 51477:  .text._Z15make_error_code13SelfTestError
+ 51478                  0x000000000801adcc       0x34 libPROJECT.a(error_categories.cc.o)
+ 51479:                 0x000000000801adcc                make_error_code(SelfTestError)
+ 51480:  .text._Z15make_error_code10TimerError
+ 51481                  0x000000000801ae00       0x34 libPROJECT.a(error_categories.cc.o)
+ 51482:                 0x000000000801ae00                make_error_code(TimerError)
+ 51483:  .text._Z15make_error_code8I2CError
+ 51484                  0x000000000801ae34       0x34 libPROJECT.a(error_categories.cc.o)
+ 51485:                 0x000000000801ae34                make_error_code(I2CError)
+ 51486:  .text._Z15make_error_code8AdcError
+ 51487                  0x000000000801ae68       0x34 libPROJECT.a(error_categories.cc.o)
+ 51488:                 0x000000000801ae68                make_error_code(AdcError)
+ 51489:  .text._Z15make_error_code23AdcChannelSelectorError
+ 51490                  0x000000000801ae9c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51491:                 0x000000000801ae9c                make_error_code(AdcChannelSelectorError)
+ 51492:  .text._Z15make_error_code21MotorPowerSupplyError
+ 51493                  0x000000000801aed0       0x34 libPROJECT.a(error_categories.cc.o)
+ 51494:                 0x000000000801aed0                make_error_code(MotorPowerSupplyError)
+ 51495:  .text._Z15make_error_code15SystemTickError
+ 51496                  0x000000000801af04       0x34 libPROJECT.a(error_categories.cc.o)
+ 51497:                 0x000000000801af04                make_error_code(SystemTickError)
+ 51498:  .text._Z15make_error_code10FlashError
+ 51499                  0x000000000801af38       0x34 libPROJECT.a(error_categories.cc.o)
+ 51500:                 0x000000000801af38                make_error_code(FlashError)
+ 51501:  .text._Z15make_error_code17UserNotifierError
+ 51502                  0x000000000801af6c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51503:                 0x000000000801af6c                make_error_code(UserNotifierError)
+ 51504:  .text._Z15make_error_code8RTCError
+ 51505                  0x000000000801afa0       0x34 libPROJECT.a(error_categories.cc.o)
+ 51506:                 0x000000000801afa0                make_error_code(RTCError)
+ 51507:  .text._Z15make_error_code12LoggingError
+ 51508                  0x000000000801afd4       0x34 libPROJECT.a(error_categories.cc.o)
+ 51509:                 0x000000000801afd4                make_error_code(LoggingError)
+ 51510:  .text._Z15make_error_code13LogEntryError
+ 51511                  0x000000000801b008       0x34 libPROJECT.a(error_categories.cc.o)
+ 51512:                 0x000000000801b008                make_error_code(LogEntryError)
+ 51513:  .text._Z15make_error_code23ISoftwareIntegrityError
+ 51514                  0x000000000801b03c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51515:                 0x000000000801b03c                make_error_code(ISoftwareIntegrityError)
+ 51516:  .text._Z15make_error_code20SwitchDebouncerError
+ 51517                  0x000000000801b070       0x34 libPROJECT.a(error_categories.cc.o)
+ 51518:                 0x000000000801b070                make_error_code(SwitchDebouncerError)
+ 51519:  .text._Z15make_error_code8PWMError
+ 51520                  0x000000000801b0a4       0x34 libPROJECT.a(error_categories.cc.o)
+ 51521:                 0x000000000801b0a4                make_error_code(PWMError)
+ 51522:  .text._Z15make_error_code12EncoderError
+ 51523                  0x000000000801b0d8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51524:                 0x000000000801b0d8                make_error_code(EncoderError)
+ 51525:  .text._Z15make_error_code20MotorControllerError
+ 51526                  0x000000000801b10c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51527:                 0x000000000801b10c                make_error_code(MotorControllerError)
+ 51528:  .text._Z15make_error_code8FSMError
+ 51529                  0x000000000801b140       0x34 libPROJECT.a(error_categories.cc.o)
+ 51530:                 0x000000000801b140                make_error_code(FSMError)
+ 51531:  .text._Z15make_error_code21MotionControllerError
+ 51532                  0x000000000801b174       0x34 libPROJECT.a(error_categories.cc.o)
+ 51533:                 0x000000000801b174                make_error_code(MotionControllerError)
+ 51534:  .text._Z15make_error_code27PIDPositionControlCoreError
+ 51535                  0x000000000801b1a8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51536:                 0x000000000801b1a8                make_error_code(PIDPositionControlCoreError)
+ 51537:  .text._Z15make_error_code23BrakingControlCoreError
+ 51538                  0x000000000801b1dc       0x34 libPROJECT.a(error_categories.cc.o)
+ 51539:                 0x000000000801b1dc                make_error_code(BrakingControlCoreError)
+ 51540:  .text._Z15make_error_code13RTOSTaskError
+ 51541                  0x000000000801b210       0x34 libPROJECT.a(error_categories.cc.o)
+ 51542:                 0x000000000801b210                make_error_code(RTOSTaskError)
+ 51543   .text._ZNK16RTOSTaskCategory7messageB5cxx11Ei
+ 51544                  0x000000000801b244       0x20 libPROJECT.a(error_categories.cc.o)
+ .....
+ 51622                  0x000000000801b584       0x20 libPROJECT.a(error_categories.cc.o)
+ 51623                  0x000000000801b584                BrakingControlCoreCategory::message[abi:cxx11](int) const
+ 51624:  .text._GLOBAL__sub_I__Z15make_error_code17HAL_StatusTypeDef
+ 51625                  0x000000000801b5a4        0xe libPROJECT.a(error_categories.cc.o)
+ 51626   .text._ZNK24STWD100_ExternalWatchdog12KickCompleteEv
+
+/Users/tylerbarkin/Documents/Git/PRIME/build/prime_ff.map:
+   38                                CMakeFiles/prime_ff.dir/src/main_ff.cc.o (vtable for AdcChannelSelector)
+   39  libPROJECT.a(error_categories.cc.o)
+   40:                               libPROJECT.a(adc.cc.o) (make_error_code(HAL_StatusTypeDef))
+   41  libPROJECT.a(STWD100_external_watchdog.cc.o)
+   42                                CMakeFiles/prime_ff.dir/src/main_ff.cc.o (vtable for STWD100_ExternalWatchdog)
+   ..
+ 9733   .text._Z20make_error_condition17HAL_StatusTypeDef
+ 9734                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9735:  .text._Z15make_error_code13HardwareFault
+ 9736                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9737   .text._Z20make_error_condition13HardwareFault
+ ....
+ 9751   .text._Z20make_error_condition8I2CError
+ 9752                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9753:  .text._Z15make_error_code17BatteryGaugeError
+ 9754                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9755   .text._Z20make_error_condition17BatteryGaugeError
+ ....
+ 9791   .text._Z20make_error_condition23BrakingControlCoreError
+ 9792                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9793:  .text._Z15make_error_code9UARTError
+ 9794                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9795   .text._Z20make_error_condition9UARTError
+ 9796                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9797:  .text._Z15make_error_code8SPIError
+ 9798                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9799   .text._Z20make_error_condition8SPIError
+ ....
+ 9801   .text._Z20make_error_condition13RTOSTaskError
+ 9802                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9803:  .text._Z15make_error_code14RTOSQueueError
+ 9804                  0x0000000000000000       0x34 libPROJECT.a(error_categories.cc.o)
+ 9805   .text._Z20make_error_condition14RTOSQueueError
+ ....
+ 51460                  0x000000000801acbc       0x1c libPROJECT.a(error_categories.cc.o)
+ 51461                  0x000000000801acbc                RTOSTaskCategory::~RTOSTaskCategory()
+ 51462:  .text._Z15make_error_code17HAL_StatusTypeDef
+ 51463                  0x000000000801acd8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51464:                 0x000000000801acd8                make_error_code(HAL_StatusTypeDef)
+ 51465:  .text._Z15make_error_code25ResetAndClockControlError
+ 51466                  0x000000000801ad0c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51467:                 0x000000000801ad0c                make_error_code(ResetAndClockControlError)
+ 51468:  .text._Z15make_error_code8CrcError
+ 51469                  0x000000000801ad40       0x34 libPROJECT.a(error_categories.cc.o)
+ 51470:                 0x000000000801ad40                make_error_code(CrcError)
+ 51471:  .text._Z15make_error_code9IwdgError
+ 51472                  0x000000000801ad74       0x34 libPROJECT.a(error_categories.cc.o)
+ 51473:                 0x000000000801ad74                make_error_code(IwdgError)
+ 51474:  .text._Z15make_error_code9EwdgError
+ 51475                  0x000000000801ada8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51476:                 0x000000000801ada8                make_error_code(EwdgError)
+ 51477:  .text._Z15make_error_code13SelfTestError
+ 51478                  0x000000000801addc       0x34 libPROJECT.a(error_categories.cc.o)
+ 51479:                 0x000000000801addc                make_error_code(SelfTestError)
+ 51480:  .text._Z15make_error_code10TimerError
+ 51481                  0x000000000801ae10       0x34 libPROJECT.a(error_categories.cc.o)
+ 51482:                 0x000000000801ae10                make_error_code(TimerError)
+ 51483:  .text._Z15make_error_code8I2CError
+ 51484                  0x000000000801ae44       0x34 libPROJECT.a(error_categories.cc.o)
+ 51485:                 0x000000000801ae44                make_error_code(I2CError)
+ 51486:  .text._Z15make_error_code8AdcError
+ 51487                  0x000000000801ae78       0x34 libPROJECT.a(error_categories.cc.o)
+ 51488:                 0x000000000801ae78                make_error_code(AdcError)
+ 51489:  .text._Z15make_error_code23AdcChannelSelectorError
+ 51490                  0x000000000801aeac       0x34 libPROJECT.a(error_categories.cc.o)
+ 51491:                 0x000000000801aeac                make_error_code(AdcChannelSelectorError)
+ 51492:  .text._Z15make_error_code21MotorPowerSupplyError
+ 51493                  0x000000000801aee0       0x34 libPROJECT.a(error_categories.cc.o)
+ 51494:                 0x000000000801aee0                make_error_code(MotorPowerSupplyError)
+ 51495:  .text._Z15make_error_code15SystemTickError
+ 51496                  0x000000000801af14       0x34 libPROJECT.a(error_categories.cc.o)
+ 51497:                 0x000000000801af14                make_error_code(SystemTickError)
+ 51498:  .text._Z15make_error_code10FlashError
+ 51499                  0x000000000801af48       0x34 libPROJECT.a(error_categories.cc.o)
+ 51500:                 0x000000000801af48                make_error_code(FlashError)
+ 51501:  .text._Z15make_error_code17UserNotifierError
+ 51502                  0x000000000801af7c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51503:                 0x000000000801af7c                make_error_code(UserNotifierError)
+ 51504:  .text._Z15make_error_code8RTCError
+ 51505                  0x000000000801afb0       0x34 libPROJECT.a(error_categories.cc.o)
+ 51506:                 0x000000000801afb0                make_error_code(RTCError)
+ 51507:  .text._Z15make_error_code12LoggingError
+ 51508                  0x000000000801afe4       0x34 libPROJECT.a(error_categories.cc.o)
+ 51509:                 0x000000000801afe4                make_error_code(LoggingError)
+ 51510:  .text._Z15make_error_code13LogEntryError
+ 51511                  0x000000000801b018       0x34 libPROJECT.a(error_categories.cc.o)
+ 51512:                 0x000000000801b018                make_error_code(LogEntryError)
+ 51513:  .text._Z15make_error_code23ISoftwareIntegrityError
+ 51514                  0x000000000801b04c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51515:                 0x000000000801b04c                make_error_code(ISoftwareIntegrityError)
+ 51516:  .text._Z15make_error_code20SwitchDebouncerError
+ 51517                  0x000000000801b080       0x34 libPROJECT.a(error_categories.cc.o)
+ 51518:                 0x000000000801b080                make_error_code(SwitchDebouncerError)
+ 51519:  .text._Z15make_error_code8PWMError
+ 51520                  0x000000000801b0b4       0x34 libPROJECT.a(error_categories.cc.o)
+ 51521:                 0x000000000801b0b4                make_error_code(PWMError)
+ 51522:  .text._Z15make_error_code12EncoderError
+ 51523                  0x000000000801b0e8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51524:                 0x000000000801b0e8                make_error_code(EncoderError)
+ 51525:  .text._Z15make_error_code20MotorControllerError
+ 51526                  0x000000000801b11c       0x34 libPROJECT.a(error_categories.cc.o)
+ 51527:                 0x000000000801b11c                make_error_code(MotorControllerError)
+ 51528:  .text._Z15make_error_code8FSMError
+ 51529                  0x000000000801b150       0x34 libPROJECT.a(error_categories.cc.o)
+ 51530:                 0x000000000801b150                make_error_code(FSMError)
+ 51531:  .text._Z15make_error_code21MotionControllerError
+ 51532                  0x000000000801b184       0x34 libPROJECT.a(error_categories.cc.o)
+ 51533:                 0x000000000801b184                make_error_code(MotionControllerError)
+ 51534:  .text._Z15make_error_code27PIDPositionControlCoreError
+ 51535                  0x000000000801b1b8       0x34 libPROJECT.a(error_categories.cc.o)
+ 51536:                 0x000000000801b1b8                make_error_code(PIDPositionControlCoreError)
+ 51537:  .text._Z15make_error_code23BrakingControlCoreError
+ 51538                  0x000000000801b1ec       0x34 libPROJECT.a(error_categories.cc.o)
+ 51539:                 0x000000000801b1ec                make_error_code(BrakingControlCoreError)
+ 51540:  .text._Z15make_error_code13RTOSTaskError
+ 51541                  0x000000000801b220       0x34 libPROJECT.a(error_categories.cc.o)
+ 51542:                 0x000000000801b220                make_error_code(RTOSTaskError)
+ 51543   .text._ZNK16RTOSTaskCategory7messageB5cxx11Ei
+ 51544                  0x000000000801b254       0x20 libPROJECT.a(error_categories.cc.o)
+ .....
+ 51622                  0x000000000801b594       0x20 libPROJECT.a(error_categories.cc.o)
+ 51623                  0x000000000801b594                BrakingControlCoreCategory::message[abi:cxx11](int) const
+ 51624:  .text._GLOBAL__sub_I__Z15make_error_code17HAL_StatusTypeDef
+ 51625                  0x000000000801b5b4        0xe libPROJECT.a(error_categories.cc.o)
+ 51626   .text._ZNK24STWD100_ExternalWatchdog12KickCompleteEv
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/adc.h:
+   28  }
+   29  
+   30: std::error_code make_error_code(AdcError error);
+   31  std::error_condition make_error_condition(AdcError error);
+   32  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/adc_channel_selector_interface.h:
+   23  }
+   24  
+   25: std::error_code make_error_code(AdcChannelSelectorError error);
+   26  std::error_condition make_error_condition(AdcChannelSelectorError error);
+   27  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/battery_gauge_interface.h:
+   31  }
+   32  
+   33: std::error_code make_error_code(BatteryGaugeError error);
+   34  std::error_condition make_error_condition(BatteryGaugeError error);
+   35  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/crc32.h:
+   25  }
+   26  
+   27: std::error_code make_error_code(CrcError error);
+   28  std::error_condition make_error_condition(CrcError error);
+   29  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/encoder_interface.h:
+   24  }
+   25  
+   26: std::error_code make_error_code(EncoderError error);
+   27  std::error_condition make_error_condition(EncoderError error);
+   28  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/error_categories.h:
+   24  }
+   25  
+   26: std::error_code make_error_code(HardwareFault error);
+   27  std::error_condition make_error_condition(HardwareFault error);
+   28  
+   ..
+   32  }
+   33  
+   34: std::error_code make_error_code(HAL_StatusTypeDef error);
+   35  std::error_condition make_error_condition(HAL_StatusTypeDef error);
+   36  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/flash_interface.h:
+   32  }
+   33  
+   34: std::error_code make_error_code(FlashError error);
+   35  std::error_condition make_error_condition(FlashError error);
+   36  //-----------------------------------------------------------------------------
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/i2c.h:
+   25  }
+   26  
+   27: std::error_code make_error_code(I2CError error);
+   28  std::error_condition make_error_condition(I2CError error);
+   29  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/internal_watchdog.h:
+   28  }
+   29  
+   30: std::error_code make_error_code(IwdgError error);
+   31  std::error_condition make_error_condition(IwdgError error);
+   32  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/log_entry.h:
+   28  }
+   29  
+   30: std::error_code make_error_code(LogEntryError error);
+   31  std::error_condition make_error_condition(LogEntryError error);
+   32  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/logging.h:
+   26  }
+   27  
+   28: std::error_code make_error_code(LoggingError error);
+   29  std::error_condition make_error_condition(LoggingError error);
+   30  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/main_fsm.h:
+   36  }
+   37  
+   38: std::error_code make_error_code(FSMError error);
+   39  std::error_condition make_error_condition(FSMError error);
+   40  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/motion_control_core.h:
+   37  }
+   38  
+   39: std::error_code make_error_code(PIDPositionControlCoreError error);
+   40  std::error_condition make_error_condition(PIDPositionControlCoreError error);
+   41  
+   ..
+  273  }
+  274  
+  275: std::error_code make_error_code(BrakingControlCoreError error);
+  276  std::error_condition make_error_condition(BrakingControlCoreError error);
+  277  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/motion_controller_interface.h:
+   37  }
+   38  
+   39: std::error_code make_error_code(MotionControllerError error);
+   40  std::error_condition make_error_condition(MotionControllerError error);
+   41  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/motor_controller_interface.h:
+   32  }
+   33  
+   34: std::error_code make_error_code(MotorControllerError error);
+   35  std::error_condition make_error_condition(MotorControllerError error);
+   36  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/motor_power_supply_interface.h:
+   30  }
+   31  
+   32: std::error_code make_error_code(MotorPowerSupplyError error);
+   33  std::error_condition make_error_condition(MotorPowerSupplyError error);
+   34  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/power_on_self_test.h:
+   54  
+   55  }
+   56: std::error_code make_error_code(SelfTestError error);
+   57  std::error_condition make_error_condition(SelfTestError error);
+   58  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/pwm_interface.h:
+   24  }
+   25  
+   26: std::error_code make_error_code(PWMError error);
+   27  std::error_condition make_error_condition(PWMError error);
+   28  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/reset_and_clock_control_interface.h:
+   24  }
+   25  
+   26: std::error_code make_error_code(ResetAndClockControlError error);
+   27  std::error_condition make_error_condition(ResetAndClockControlError error);
+   28  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/rtc_interface.h:
+   28  }
+   29  
+   30: std::error_code make_error_code(RTCError error);
+   31  std::error_condition make_error_condition(RTCError error);
+   32  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/rtos_queue_interface.h:
+   26  }
+   27  
+   28: std::error_code make_error_code(RTOSQueueError error);
+   29  std::error_condition make_error_condition(RTOSQueueError error);
+   30  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/rtos_task_interface.h:
+   27  }
+   28  
+   29: std::error_code make_error_code(RTOSTaskError error);
+   30  std::error_condition make_error_condition(RTOSTaskError error);
+   31  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/software_integrity_check_interface.h:
+   24  }
+   25  
+   26: std::error_code make_error_code(ISoftwareIntegrityError error);
+   27  std::error_condition make_error_condition(ISoftwareIntegrityError error);
+   28  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/spi_interface.h:
+   28  }
+   29  
+   30: std::error_code make_error_code(SPIError error);
+   31  std::error_condition make_error_condition(SPIError error);
+   32  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/switch_debouncer.h:
+   26  }
+   27  
+   28: std::error_code make_error_code(SwitchDebouncerError error);
+   29  std::error_condition make_error_condition(SwitchDebouncerError error);
+   30  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/system_tick.h:
+   27  }
+   28  
+   29: std::error_code make_error_code(SystemTickError error);
+   30  std::error_condition make_error_condition(SystemTickError error);
+   31  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/timer_interface.h:
+   28  }
+   29  
+   30: std::error_code make_error_code(TimerError error);
+   31  std::error_condition make_error_condition(TimerError error);
+   32  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/uart_interface.h:
+   27  }
+   28  
+   29: std::error_code make_error_code(UARTError error);
+   30  std::error_condition make_error_condition(UARTError error);
+   31  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/user_notifier_interface.h:
+   22  }
+   23  
+   24: std::error_code make_error_code(UserNotifierError error);
+   25  std::error_condition make_error_condition(UserNotifierError error);
+   26  
+
+/Users/tylerbarkin/Documents/Git/PRIME/include/watchdog_interface.h:
+   24  }
+   25  
+   26: std::error_code make_error_code(EwdgError error);
+   27  std::error_condition make_error_condition(EwdgError error);
+   28  
+
+/Users/tylerbarkin/Documents/Git/PRIME/src/error_categories.cc:
+   50  };
+   51  
+   52: std::error_code make_error_code(HAL_StatusTypeDef error) {
+   53      return std::error_code(static_cast<int>(error), HalCategory::Instance());
+   54  }
+   ..
+   70  };
+   71  
+   72: std::error_code make_error_code(HardwareFault error) {
+   73      return std::error_code(static_cast<int>(error), HardwareFaultCategory::Instance());
+   74  }
+   ..
+   90  };
+   91  
+   92: std::error_code make_error_code(ResetAndClockControlError error) {
+   93      return std::error_code(static_cast<int>(error), ResetAndClockControlCategory::Instance());
+   94  }
+   ..
+  111  };
+  112  
+  113: std::error_code make_error_code(CrcError error) {
+  114      return std::error_code(static_cast<int>(error), CrcCategory::Instance());
+  115  }
+  ...
+  131  };
+  132  
+  133: std::error_code make_error_code(IwdgError error) {
+  134      return std::error_code(static_cast<int>(error), IwdgCategory::Instance());
+  135  }
+  ...
+  151  };
+  152  
+  153: std::error_code make_error_code(EwdgError error) {
+  154      return std::error_code(static_cast<int>(error), EwdgCategory::Instance());
+  155  }
+  ...
+  172  };
+  173  
+  174: std::error_code make_error_code(SelfTestError error) {
+  175      return std::error_code(static_cast<int>(error), SelfTestCategory::Instance());
+  176  }
+  ...
+  192  };
+  193  
+  194: std::error_code make_error_code(TimerError error) {
+  195      return std::error_code(static_cast<int>(error), TimerCategory::Instance());
+  196  }
+  ...
+  212  };
+  213  
+  214: std::error_code make_error_code(I2CError error) {
+  215      return std::error_code(static_cast<int>(error), I2CCategory::Instance());
+  216  }
+  ...
+  232  };
+  233  
+  234: std::error_code make_error_code(BatteryGaugeError error) {
+  235      return std::error_code(static_cast<int>(error), BQ27542BatteryGaugeCategory::Instance());
+  236  }
+  ...
+  252  };
+  253  
+  254: std::error_code make_error_code(AdcError error) {
+  255      return std::error_code(static_cast<int>(error), AdcCategory::Instance());
+  256  }
+  ...
+  272  };
+  273  
+  274: std::error_code make_error_code(AdcChannelSelectorError error) {
+  275      return std::error_code(static_cast<int>(error), AdcChannelSelectorCategory::Instance());
+  276  }
+  ...
+  292  };
+  293  
+  294: std::error_code make_error_code(MotorPowerSupplyError error) {
+  295      return std::error_code(static_cast<int>(error), MotorPowerSupplyCategory::Instance());
+  296  }
+  ...
+  311  };
+  312  
+  313: std::error_code make_error_code(SystemTickError error) {
+  314      return std::error_code(static_cast<int>(error), SystemTickCategory::Instance());
+  315  }
+  ...
+  331  };
+  332  
+  333: std::error_code make_error_code(FlashError error) {
+  334      return std::error_code(static_cast<int>(error), FlashCategory::Instance());
+  335  }
+  ...
+  351  };
+  352  
+  353: std::error_code make_error_code(UserNotifierError error) {
+  354      return std::error_code(static_cast<int>(error), UserNotifierCategory::Instance());
+  355  }
+  ...
+  371  };
+  372  
+  373: std::error_code make_error_code(RTCError error) {
+  374      return std::error_code(static_cast<int>(error), RTCCategory::Instance());
+  375  }
+  ...
+  391  };
+  392  
+  393: std::error_code make_error_code(LoggingError error) {
+  394      return std::error_code(static_cast<int>(error), LoggingCategory::Instance());
+  395  }
+  ...
+  411  };
+  412  
+  413: std::error_code make_error_code(LogEntryError error) {
+  414      return std::error_code(static_cast<int>(error), LogEntryCategory::Instance());
+  415  }
+  ...
+  431  };
+  432  
+  433: std::error_code make_error_code(ISoftwareIntegrityError error) {
+  434      return std::error_code(static_cast<int>(error), ISoftwareIntegrityCategory::Instance());
+  435  }
+  ...
+  451  };
+  452  
+  453: std::error_code make_error_code(SwitchDebouncerError error) {
+  454      return std::error_code(static_cast<int>(error), SwitchDebouncerCategory::Instance());
+  455  }
+  ...
+  470  };
+  471  
+  472: std::error_code make_error_code(PWMError error) {
+  473      return std::error_code(static_cast<int>(error), PWMCategory::Instance());
+  474  }
+  ...
+  489  };
+  490  
+  491: std::error_code make_error_code(EncoderError error) {
+  492      return std::error_code(static_cast<int>(error), EncoderCategory::Instance());
+  493  }
+  ...
+  508  };
+  509  
+  510: std::error_code make_error_code(MotorControllerError error) {
+  511      return std::error_code(static_cast<int>(error), MotorControllerCategory::Instance());
+  512  }
+  ...
+  528  };
+  529  
+  530: std::error_code make_error_code(FSMError error) {
+  531      return std::error_code(static_cast<int>(error), FSMCategory::Instance());
+  532  }
+  ...
+  547  };
+  548  
+  549: std::error_code make_error_code(MotionControllerError error) {
+  550      return std::error_code(static_cast<int>(error), MotionControllerCategory::Instance());
+  551  }
+  ...
+  566  };
+  567  
+  568: std::error_code make_error_code(PIDPositionControlCoreError error) {
+  569      return std::error_code(static_cast<int>(error),
+  570          PIDPositionControlCoreCategory::Instance());
+  ...
+  587  };
+  588  
+  589: std::error_code make_error_code(BrakingControlCoreError error) {
+  590      return std::error_code(static_cast<int>(error), BrakingControlCoreCategory::Instance());
+  591  }
+  ...
+  606  };
+  607  
+  608: std::error_code make_error_code(UARTError error) {
+  609      return std::error_code(static_cast<int>(error), UARTCategory::Instance());
+  610  }
+  ...
+  625  };
+  626  
+  627: std::error_code make_error_code(SPIError error) {
+  628      return std::error_code(static_cast<int>(error), SPICategory::Instance());
+  629  }
+  ...
+  644  };
+  645  
+  646: std::error_code make_error_code(RTOSTaskError error) {
+  647      return std::error_code(static_cast<int>(error), RTOSTaskCategory::Instance());
+  648  }
+  ...
+  663  };
+  664  
+  665: std::error_code make_error_code(RTOSQueueError error) {
+  666      return std::error_code(static_cast<int>(error), RTOSQueueCategory::Instance());
+  667  }
+
+222 matches across 34 files
