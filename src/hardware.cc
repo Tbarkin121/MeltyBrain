@@ -8,7 +8,7 @@
 ------------------------------------------------------------------------------*/
 
 #include "include/hardware.h"
-#include "include/stm32f4xx.h"
+#include "include/stm32f3xx.h"
 // #include "include/gpio.h"
 // #include "include/reset_and_clock_control.h"
 

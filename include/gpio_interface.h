@@ -12,7 +12,7 @@
 
 // We are standardizing on <system_error> for error handling
 #include <system_error>  // NOLINT(build/c++11)
-#include "include/stm32f4xx.h"
+#include "include/stm32f3xx.h"
 
 class IGPIO {
  public:

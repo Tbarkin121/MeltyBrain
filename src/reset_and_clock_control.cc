@@ -8,7 +8,7 @@
 ------------------------------------------------------------------------------*/
 
 #include "include/reset_and_clock_control.h"
-#include "include/stm32f4xx.h"
+#include "include/stm32f3xx.h"
 // #include "diag/Trace.h"
 
 //-----------------------------------------------------------------------------
@@ -50,7 +50,7 @@ void ResetAndClockControl::InitializeOscillators() const {
     // The voltage scaling allows optimizing the power consumption when the device is
     // clocked below the maximum system frequency, to update the voltage scaling value
     // regarding system frequency refer to product datasheet.
-    __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+   // __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
     // Initialize the HSE (High Speed External Oscillator) and initialize the PLLs
     // The board uses an 8MHz crystal
@@ -82,15 +82,13 @@ void ResetAndClockControl::InitializeOscillators() const {
 
     RCC_OscInitTypeDef RCC_OscInitStruct;
 
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+    RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
     RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-    RCC_OscInitStruct.HSICalibrationValue = 16;
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-    RCC_OscInitStruct.PLL.PLLM = 16;
-    RCC_OscInitStruct.PLL.PLLN = 336;
-    RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV4;
-    RCC_OscInitStruct.PLL.PLLQ = 7;
+    RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
+    RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;
     HAL_RCC_OscConfig(&RCC_OscInitStruct);
 }
 
@@ -134,8 +132,8 @@ void ResetAndClockControl::InitializeBusClocks() const {
     // Set the appropriate constants here, based on the above calculations.
     // We are doing this manually as we are not using a calculator function
     // or macro above, so ensure this matches the comments if it ever changes
-    apb1_timer_frequency_hz_ = 42000000;  // 42 MHz
-    apb2_timer_frequency_hz_ = 84000000;  // 84 MHz
+    apb1_timer_frequency_hz_ = 36000000;  // 42 MHz
+    apb2_timer_frequency_hz_ = 72000000;  // 84 MHz
 }
 
 //-----------------------------------------------------------------------------
@@ -146,28 +144,28 @@ void ResetAndClockControl::InitializeSysTick() const {
 
 //-----------------------------------------------------------------------------
 void ResetAndClockControl::EnablePeripheralClocks() const {
-    __ADC1_CLK_ENABLE();
-    __HAL_RCC_CRC_CLK_ENABLE();
-    __HAL_RCC_GPIOA_CLK_ENABLE();  // PWM
+    // __ADC1_CLK_ENABLE();
+    // __HAL_RCC_CRC_CLK_ENABLE();
+    // __HAL_RCC_GPIOA_CLK_ENABLE();  // PWM
     __HAL_RCC_GPIOB_CLK_ENABLE();  // contactor enable; I2C;
-    __HAL_RCC_GPIOC_CLK_ENABLE();  // Motor Control En/Dis
-    __HAL_RCC_GPIOD_CLK_ENABLE();  // Encoder
-    __HAL_RCC_GPIOE_CLK_ENABLE();  // Capacitor Bank Enable; motor enable
-    // __HAL_RCC_GPIOF_CLK_ENABLE();  // Buttons; watchdog
+    // __HAL_RCC_GPIOC_CLK_ENABLE();  // Motor Control En/Dis
+    // __HAL_RCC_GPIOD_CLK_ENABLE();  // Encoder
+    // __HAL_RCC_GPIOE_CLK_ENABLE();  // Capacitor Bank Enable; motor enable
+    __HAL_RCC_GPIOF_CLK_ENABLE();  // Buttons; watchdog
     // __HAL_RCC_GPIOG_CLK_ENABLE();  // Buttons; watchdog
     // __HAL_RCC_GPIOI_CLK_ENABLE();  // charger status line
-    __HAL_RCC_I2C1_CLK_ENABLE();
-    __HAL_RCC_TIM1_CLK_ENABLE();   // PWM
-    __HAL_RCC_TIM2_CLK_ENABLE();
-    __HAL_RCC_TIM3_CLK_ENABLE();
-    __HAL_RCC_TIM4_CLK_ENABLE();   // Encoder
-    __HAL_RCC_TIM5_CLK_ENABLE();
+    // __HAL_RCC_I2C1_CLK_ENABLE();
+    // __HAL_RCC_TIM1_CLK_ENABLE();   // PWM
+    // __HAL_RCC_TIM2_CLK_ENABLE();
+    // __HAL_RCC_TIM3_CLK_ENABLE();
+    // __HAL_RCC_TIM4_CLK_ENABLE();   // Encoder
+    // __HAL_RCC_TIM5_CLK_ENABLE();
     // __HAL_RCC_TIM8_CLK_ENABLE();
-    __HAL_RCC_USART2_CLK_ENABLE();
+    // __HAL_RCC_USART2_CLK_ENABLE();
     // __HAL_RCC_USART3_CLK_ENABLE();
-    __HAL_RCC_USART6_CLK_ENABLE();
-    __HAL_RCC_SPI3_CLK_ENABLE();
-    __HAL_RCC_MCO1_CONFIG(RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
+    // __HAL_RCC_USART6_CLK_ENABLE();
+    // __HAL_RCC_SPI3_CLK_ENABLE();
+    // __HAL_RCC_MCO1_CONFIG(RCC_MCO1SOURCE_HSE, RCC_MCODIV_1);
 }
 
 //-----------------------------------------------------------------------------
@@ -195,8 +193,8 @@ IResetAndClockControl::ResetSource ResetAndClockControl::GetResetSource() const 
         return ResetSource::PowerOnReset;
 
     // Brown out reset
-    if (__HAL_RCC_GET_FLAG(RCC_FLAG_BORRST))
-        return ResetSource::BrownOutReset;
+    // if (__HAL_RCC_GET_FLAG(RCC_FLAG_BORRST))
+    //     return ResetSource::BrownOutReset;
 
     // Independent watchdog reset
     if (__HAL_RCC_GET_FLAG(RCC_FLAG_IWDGRST))

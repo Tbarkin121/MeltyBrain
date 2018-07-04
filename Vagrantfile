@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-vm_name = 'STM32F4Discovery'
+vm_name = 'MeltyBrain'
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/xenial64"
   config.vm.provision :shell, path: "bootstrap.sh"

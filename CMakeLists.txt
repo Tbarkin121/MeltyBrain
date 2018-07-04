@@ -9,7 +9,7 @@
 cmake_minimum_required(VERSION 2.8)
 
 enable_language(ASM)
-project(FieldOrientedControl)
+project(MeltyBrain)
 
 
 # Set the output folder where your program will be created
@@ -21,59 +21,58 @@ set(TOOLS_PATH /opt/tools)
 set(SCRIPTS_PATH ${CMAKE_SOURCE_DIR}/tools)
 
 set(STM_LIB_SOURCES
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_crc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_iwdg.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rtc_ex.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/CMSIS/Device/ST/STM32F4xx/Source/Templates/system_stm32f4xx.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_crc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_iwdg.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc_ex.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/system_stm32f3xx.c
         
         )
 
 set(STM_STARTUP_SOURCES
-        #${CMAKE_SOURCE_DIR}/src/startup_stm32f407xx.s
-        ${CMAKE_SOURCE_DIR}/src/startup_stm32f401xe.s
+        ${CMAKE_SOURCE_DIR}/src/startup_stm32f334x8.s
         )
 
 set(FreeRTOS_LIB_SOURCES
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/list.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/queue.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/timers.c
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/list.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/queue.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/timers.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
         )
 
 set(PROJECT_SOURCES
-        ${CMAKE_SOURCE_DIR}/src/system.cc
+        # ${CMAKE_SOURCE_DIR}/src/system.cc
         ${CMAKE_SOURCE_DIR}/src/freertos_tasks.c
         )
 
 set(PROJECT_LOW_LEVEL_SOURCES
 
-        ${CMAKE_SOURCE_DIR}/src/stm32f4xx_it.c
+        ${CMAKE_SOURCE_DIR}/src/stm32f3xx_it.c
         ${CMAKE_SOURCE_DIR}/src/gpio.cc
         ${CMAKE_SOURCE_DIR}/src/reset_and_clock_control.cc
-        ${CMAKE_SOURCE_DIR}/src/rtos_task.cc
-        ${CMAKE_SOURCE_DIR}/src/rtos_queue.cc
+        # ${CMAKE_SOURCE_DIR}/src/rtos_task.cc
+        # ${CMAKE_SOURCE_DIR}/src/rtos_queue.cc
         
         )
 
 set(MAIN_SOURCES
         ${CMAKE_SOURCE_DIR}/src/main.cc
-        ${CMAKE_SOURCE_DIR}/src/stm32f4xx_it.c
+        ${CMAKE_SOURCE_DIR}/src/stm32f3xx_it.c
         )
 
 set(PROJECT_LIB_SOURCES
@@ -81,17 +80,14 @@ set(PROJECT_LIB_SOURCES
         )
 
 include_directories(
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/STM32F4xx_HAL_Driver/Inc
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/CMSIS/Include
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Inc
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS/Device/ST/STM32F3xx/Include
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS/Include
 
-        #${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F4_Discovery
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Drivers/BSP/STM32F4xx-Nucleo
-
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/include
-        ${TOOLS_PATH}/STM32Cube_FW_F4_V1.21.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/include
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
 
         ${CMAKE_SOURCE_DIR}/include
         ${CMAKE_SOURCE_DIR}
@@ -151,9 +147,8 @@ set(GCC_DEBUG_FLAGS "-g3")
 #  -g3                                  Produces debugging information
 
 # STM32F Specific definitions
-#set(STM_SPECIFIC_DEFINES "-DSTM32F407xx -DUSE_HAL_DRIVER -DHSE_VALUE=8000000")
-set(STM_SPECIFIC_DEFINES "-DSTM32F401xE -DUSE_HAL_DRIVER -DHSE_VALUE=8000000")
-#  -DSTM32F417xx                        Defines the processor to be STM32F407xx
+set(STM_SPECIFIC_DEFINES "-DSTM32F334x8 -DUSE_HAL_DRIVER -DHSE_VALUE=8000000")
+#  -DSTM32F334x8                        Defines the processor to be STM32F334x8
 #  -DUSE_HAL_DRIVER                     Use the provided hardware abstraction layer drivers instead of direct register access
 #  -DHSE_VALUE=8000000                  Set crystal frequency to 8MHz
 
@@ -172,8 +167,8 @@ set(STM_SPECIFIC_DEBUG_DEFINES "-DDEBUG -DTRACE -DUSE_FULL_ASSERT -DOS_USE_SEMIH
 # http://stm32f4-discovery.com/2015/01/properly-set-clock-speed-stm32f4xx-devices/
 # https://feabhas.gitbooks.io/stm32f4-cmsis/content/compiler_flags.html
 
-# Linker flags
-set(GCC_LINK_FLAGS "-u _printf_float -nostartfiles -Xlinker --gc-sections -L${CMAKE_SOURCE_DIR}/ldscripts --specs=nano.specs --specs=nosys.specs")
+# Linker flags -nostartfiles
+set(GCC_LINK_FLAGS "-u _printf_float -Xlinker --gc-sections -L${CMAKE_SOURCE_DIR}/ldscripts --specs=nano.specs --specs=nosys.specs")
 #  -u _printf_float                     Linker flag for flaoting point printf and sprintf
 #  -nostartfiles                        Don't use system startup files
 #  -Xlinker                             Options to follow:
@@ -189,8 +184,8 @@ set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${GCC_PROCESSOR_FLAGS} ${G
 set(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS)
 
 #set(GCC_TARGET_LINK_SCRIPTS "-T mem.ld -T stack.ld -T sections.ld")
-set(GCC_TARGET_LINK_SCRIPTS "-T STM32F407VGTx_FLASH.ld")
-set(GCC_TARGET_FREERTOS_LINK_SCRIPTS "-T STM32F407VGTx_FLASH.ld")
+set(GCC_TARGET_LINK_SCRIPTS "-T STM32F334R8Tx_FLASH.ld")
+set(GCC_TARGET_FREERTOS_LINK_SCRIPTS "-T STM32F334R8Tx_FLASH.ld")
 # For main build
 add_library(STM ${STM_LIB_SOURCES})
 add_library(STARTUP ${STM_STARTUP_SOURCES})

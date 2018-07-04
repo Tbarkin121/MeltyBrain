@@ -35,7 +35,7 @@ GPIO_InitTypeDef BaseGPIOPin::GetAlternateOpenDrainConfiguration(uint32_t altern
 
     gpio_config.Mode = GPIO_MODE_AF_OD;
     gpio_config.Pull = GPIO_PULLUP;
-    gpio_config.Speed = GPIO_SPEED_FAST;
+    gpio_config.Speed = GPIO_SPEED_FREQ_HIGH;
     gpio_config.Alternate = alternate;
 
     return gpio_config;
@@ -48,7 +48,7 @@ GPIO_InitTypeDef BaseGPIOPin::GetAlternatePushPullConfiguration(uint32_t alterna
 
     gpio_config.Mode = GPIO_MODE_AF_PP;
     gpio_config.Pull = GPIO_PULLUP;
-    gpio_config.Speed = GPIO_SPEED_HIGH;
+    gpio_config.Speed = GPIO_SPEED_FREQ_HIGH;
     gpio_config.Alternate = alternate;
 
     return gpio_config;
@@ -70,7 +70,7 @@ std::error_code OutputPin::Initialize() const {
 
     gpio_config.Mode = GPIO_MODE_OUTPUT_PP;
     gpio_config.Pull = GPIO_NOPULL;
-    gpio_config.Speed = GPIO_SPEED_HIGH;
+    gpio_config.Speed = GPIO_SPEED_FREQ_HIGH;
 
     if ( pin_state_ ) {
         HAL_GPIO_WritePin(gpio_.Port(), gpio_.Pin(), GPIO_PIN_SET);
@@ -121,7 +121,7 @@ std::error_code InputPin::Initialize() const {
 
     gpio_config.Mode = GPIO_MODE_INPUT;
     gpio_config.Pull = GPIO_NOPULL;
-    gpio_config.Speed = GPIO_SPEED_HIGH;
+    gpio_config.Speed = GPIO_SPEED_FREQ_HIGH;
 
     return gpio_.Initialize(gpio_config);
 }
