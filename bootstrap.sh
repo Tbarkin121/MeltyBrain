@@ -8,7 +8,7 @@
 
 apt-get update
 sudo apt-get install -y lib32z1 lib32ncurses5
-sudo apt-get install autoconf pkg-config libusb-1.0 git libusb-dev pkg-config libtool
+sudo apt-get install -y autoconf pkg-config libusb-1.0 git libusb-dev pkg-config libtool
 sudo apt-get install -y build-essential autotools-dev autoconf pkg-config libusb-1.0-0 libusb-1.0-0-dev libftdi1 libftdi-dev git libc6:i386 libncurses5:i386 libstdc++6:i386
 apt-get install -y cmake
 apt-get install -y build-essential

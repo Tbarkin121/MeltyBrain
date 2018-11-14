@@ -146,7 +146,7 @@ void ResetAndClockControl::InitializeSysTick() const {
 void ResetAndClockControl::EnablePeripheralClocks() const {
     // __ADC1_CLK_ENABLE();
     // __HAL_RCC_CRC_CLK_ENABLE();
-    // __HAL_RCC_GPIOA_CLK_ENABLE();  // PWM
+    __HAL_RCC_GPIOA_CLK_ENABLE();  // SBUS
     __HAL_RCC_GPIOB_CLK_ENABLE();  // contactor enable; I2C;
     // __HAL_RCC_GPIOC_CLK_ENABLE();  // Motor Control En/Dis
     // __HAL_RCC_GPIOD_CLK_ENABLE();  // Encoder
