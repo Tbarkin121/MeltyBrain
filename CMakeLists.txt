@@ -21,23 +21,23 @@ set(TOOLS_PATH /opt/tools)
 set(SCRIPTS_PATH ${CMAKE_SOURCE_DIR}/tools)
 
 set(STM_LIB_SOURCES
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_crc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_iwdg.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc_ex.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/system_stm32f3xx.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_adc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_cortex.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_crc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_gpio.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_i2c.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_pwr.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rcc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_flash.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_iwdg.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_rtc_ex.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_spi.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_tim_ex.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Src/stm32f3xx_hal_uart.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/CMSIS/Device/ST/STM32F3xx/Source/Templates/system_stm32f3xx.c
         
         )
 
@@ -46,13 +46,13 @@ set(STM_STARTUP_SOURCES
         )
 
 set(FreeRTOS_LIB_SOURCES
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/list.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/queue.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/timers.c
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/croutine.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/list.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/queue.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/tasks.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/timers.c
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c
         )
 
 set(PROJECT_SOURCES
@@ -80,14 +80,14 @@ set(PROJECT_LIB_SOURCES
         )
 
 include_directories(
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/STM32F3xx_HAL_Driver/Inc
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS/Device/ST/STM32F3xx/Include
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Drivers/CMSIS/Include
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/STM32F3xx_HAL_Driver/Inc
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/CMSIS/Device/ST/STM32F3xx/Include
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Drivers/CMSIS/Include
 
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/include
-        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.9.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/include
+        ${TOOLS_PATH}/STM32Cube_FW_F3_V1.10.0/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
 
         ${CMAKE_SOURCE_DIR}/include
         ${CMAKE_SOURCE_DIR}
@@ -96,10 +96,10 @@ include_directories(
 
 
 
-set(CMAKE_C_COMPILER ${TOOLS_PATH}/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcc)
-set(CMAKE_CXX_COMPILER ${TOOLS_PATH}/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-g++)
-set(CMAKE_ASM_COMPILER ${TOOLS_PATH}/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-as)
-set(GCOV ${TOOLS_PATH}/gcc-arm-none-eabi-7-2017-q4-major/bin/arm-none-eabi-gcov)
+set(CMAKE_C_COMPILER ${TOOLS_PATH}/gcc-arm-none-eabi-7-2018-q2-update/bin/arm-none-eabi-gcc)
+set(CMAKE_CXX_COMPILER ${TOOLS_PATH}/gcc-arm-none-eabi-7-2018-q2-update/bin/arm-none-eabi-g++)
+set(CMAKE_ASM_COMPILER ${TOOLS_PATH}/gcc-arm-none-eabi-7-2018-q2-update/bin/arm-none-eabi-as)
+set(GCOV ${TOOLS_PATH}/gcc-arm-none-eabi-7-2018-q2-update/bin/arm-none-eabi-gcov)
 # Processor flags
 set(GCC_PROCESSOR_FLAGS "-mcpu=cortex-m4 -mthumb")
 #  -mcpu=cortex-m4                      Processor type is ARM Cortex M4
