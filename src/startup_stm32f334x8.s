@@ -116,6 +116,30 @@ LoopForever:
 .size	Reset_Handler, .-Reset_Handler
 
 /**
+ * @brief Stub for _init function called by __libc_init_array()
+ * @param  None
+ * @retval None
+*/
+    .section  .text._init
+  .weak  _init
+  .type  _init, %function
+_init:
+  bx lr
+.size  _init, .-_init
+
+/**
+ * @brief Stub for _fini function called by __libc_fini_array()
+ * @param  None
+ * @retval None
+*/
+    .section  .text._fini
+  .weak  _fini
+  .type  _fini, %function
+_fini:
+  bx  lr
+.size  _fini, .-_fini
+
+/**
  * @brief  This is the code that gets called when the processor receives an
  *         unexpected interrupt.  This simply enters an infinite loop, preserving
  *         the system state for examination by a debugger.

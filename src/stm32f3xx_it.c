@@ -153,6 +153,8 @@ void __attribute__((weak)) PendSV_Handler(void) {
   * @retval None
   */
 void __attribute__((weak)) SysTick_Handler(void) {
+  HAL_IncTick();
+  HAL_SYSTICK_IRQHandler();
     // This SysTick_Handler is used only when FreeRTOS is not being used. The
     // call below emulates the FreeRTOS tick hook functionality.
     // vApplicationTickHook();

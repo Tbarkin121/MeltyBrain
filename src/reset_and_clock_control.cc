@@ -50,7 +50,7 @@ void ResetAndClockControl::InitializeOscillators() const {
     // The voltage scaling allows optimizing the power consumption when the device is
     // clocked below the maximum system frequency, to update the voltage scaling value
     // regarding system frequency refer to product datasheet.
-   // __HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
+    //__HAL_PWR_VOLTAGESCALING_CONFIG(PWR_REGULATOR_VOLTAGE_SCALE1);
 
     // Initialize the HSE (High Speed External Oscillator) and initialize the PLLs
     // The board uses an 8MHz crystal
@@ -82,10 +82,11 @@ void ResetAndClockControl::InitializeOscillators() const {
 
     RCC_OscInitTypeDef RCC_OscInitStruct;
 
-    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
+    RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_HSE;
     RCC_OscInitStruct.HSEState = RCC_HSE_ON;
     RCC_OscInitStruct.HSEPredivValue = RCC_HSE_PREDIV_DIV1;
     RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+    RCC_OscInitStruct.HSICalibrationValue = 16;
     RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
     RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
     RCC_OscInitStruct.PLL.PLLMUL = RCC_PLL_MUL9;

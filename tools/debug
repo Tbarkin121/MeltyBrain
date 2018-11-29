@@ -1,0 +1,4 @@
+target remote localhost:3333
+file /vagrant/build/MeltyBrain
+load
+monitor reset halt
